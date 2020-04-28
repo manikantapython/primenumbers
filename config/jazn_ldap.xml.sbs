@@ -1,0 +1,11 @@
+###########################################################################
+#
+# Use this configuration or using LDAP Provider.
+# 
+# Please substitute/provide the correct values for the following:
+#
+# <<ldap_url>>  - URL to your LDAP host where JAZN schema/data is stored
+#                 (e.g. "ldap://jazn.us.oracle.com:389")
+#
+###########################################################################
+<jazn provider="LDAP" location="ldap://%s_oidHost%:%s_oidPort%" />

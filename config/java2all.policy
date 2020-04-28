@@ -1,0 +1,13 @@
+/*****************************************************************/
+/** Java2 policy for JAZN/OC4J                                  **/
+/**                                                             **/
+/** INSTRUCTIONS                                                **/
+/** - change <<ade_view>> to your ADE view                      **/
+/** - change <<oc4j_host_ip>> to your OC4J machine's IP address **/
+/** - change <<ldap_host_ip>> to your Oid machine's IP address  **/
+/*****************************************************************/
+
+grant {
+    permission java.security.AllPermission;
+};
+

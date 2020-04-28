@@ -1,0 +1,25 @@
+<?xml version="1.0" standalone='yes'?>
+<!DOCTYPE jazn-data PUBLIC "JAZN-XML Data" "http://xmlns.oracle.com/ias/dtds/jazn-data.dtd">
+<jazn-data>
+
+<!-- JAZN Realm Data -->
+<jazn-realm>
+</jazn-realm>
+
+<!-- JAZN Policy Data -->
+<jazn-policy>
+</jazn-policy>
+
+<!-- Permission Class Data -->
+<jazn-permission-classes>
+</jazn-permission-classes>
+
+<!-- Principal Class Data -->
+<jazn-principal-classes>
+</jazn-principal-classes>
+
+<!-- Login Module Data -->
+<jazn-loginconfig>
+</jazn-loginconfig>
+
+</jazn-data>

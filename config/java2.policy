@@ -1,0 +1,227 @@
+/***************************************************************************/
+/** Java2 policy for JAZN/OC4J                                            **/
+/**                                                                       **/
+/** INSTRUCTIONS                                                          **/
+/** [OPTIONAL]  set ${oracle.home} to your $ORACLE_HOME                   **/
+/**             this is automatically set in OC4J environment             **/
+/***************************************************************************/
+
+/* OC4J */
+
+grant codebase "file:${oracle.home}/j2ee/home/jazn.jar" {
+    permission java.security.AllPermission;
+};
+
+grant codebase "file:${oracle.home}/j2ee/home/lib/jmxri.jar" {
+    permission java.security.AllPermission;
+};
+
+grant codebase "file:${oracle.home}/j2ee/home/oc4j.jar" {
+    permission java.security.AllPermission;
+};
+
+grant codebase "file:${oracle.home}/j2ee/home/jaxp.jar" {
+    permission java.security.AllPermission;
+};
+
+grant codebase "file:${oracle.home}/j2ee/home/ejb.jar" {
+    permission java.security.AllPermission;
+};
+
+grant codebase "file:${oracle.home}/j2ee/home/jaxb-rt-1.0-ea.jar" {
+    permission java.security.AllPermission;
+};
+
+grant codebase "file:${oracle.home}/j2ee/home/lib/jasper.zip" {
+    permission java.security.AllPermission;
+};
+
+grant codebase "file:${oracle.home}/j2ee/home/lib/bcel.jar" {
+    permission java.security.AllPermission;
+};
+
+grant codebase "file:${oracle.home}/j2ee/home/connector.jar" {
+    permission java.security.AllPermission;
+};
+
+grant codebase "file:${oracle.home}/j2ee/home/jdbc.jar" {
+    permission java.security.AllPermission;
+};
+
+/* Optional Packages */
+
+grant codebase "file:${java.home}/jre/lib/ext/jaas.jar" {
+    permission java.security.AllPermission;
+};
+
+grant codebase "file:${java.home}/jre/lib/ext/jaasmod.jar" {
+    permission java.security.AllPermission;
+};
+
+grant codebase "file:${java.home}/jre/lib/ext/jndi.jar" {
+    permission java.security.AllPermission;
+};
+
+grant codebase "file:${java.home}/jre/lib/ext/jta.jar" {
+    permission java.security.AllPermission;
+};
+
+grant codebase "file:${java.home}/jre/lib/ext/jnet.jar" {
+    permission java.security.AllPermission;
+};
+
+grant codebase "file:${java.home}/jre/lib/ext/jcert.jar" {
+    permission java.security.AllPermission;
+};
+
+grant codebase "file:${java.home}/jre/lib/ext/mail.jar" {
+    permission java.security.AllPermission;
+};
+
+grant codebase "file:${java.home}/jre/lib/ext/activation.jar" {
+    permission java.security.AllPermission;
+};
+
+/* SOAP */
+
+grant codebase "file:${oracle.home}/soap/lib/soap.jar" {
+    permission java.security.AllPermission;
+};
+
+grant codebase "file:${oracle.home}/soap/lib/wsdl.jar" {
+    permission java.security.AllPermission;
+};
+
+/* JDBC */
+
+grant codebase "file:${oracle.home}/jdbc/lib/classes12.jar" {
+    permission java.security.AllPermission;
+};
+
+grant codebase "file:${oracle.home}/jdbc/lib/classes12dms.jar" {
+    permission java.security.AllPermission;
+};
+
+grant codebase "file:${oracle.home}/jdbc/lib/nls_charset12.jar" {
+    permission java.security.AllPermission;
+};
+
+grant codebase "file:${oracle.home}/oracle/jdbc/lib/classes12dms.jar" {
+    permission java.security.AllPermission;
+};
+
+grant codebase "file:${oracle.home}/oracle/jdbc/lib/nls_charset12.jar" {
+    permission java.security.AllPermission;
+};
+
+/* XDK */
+
+grant codebase "file:${oracle.home}/lib/xmlparserv2.jar" {
+    permission java.security.AllPermission;
+};
+
+grant codebase "file:${oracle.home}/oracle/lib/xmlparserv2.jar" {
+    permission java.security.AllPermission;
+};
+
+/* JSSE */
+
+grant codebase "file:${oracle.home}/lib/jsse.jar" {
+    permission java.security.AllPermission;
+};
+
+grant codebase "file:${oracle.home}/oracle/lib/jsse.jar" {
+    permission java.security.AllPermission;
+};
+
+grant codebase "file:${oracle.home}/jlib/jssl-1_1.jar" {
+    permission java.security.AllPermission;	
+};
+
+grant codebase "file:${oracle.home}/oracle/jlib/jssl-1_1.jar" {
+    permission java.security.AllPermission;	
+};
+
+/* JavaCache */
+
+grant codebase "file:${oracle.home}/javacache/lib/cache.jar" {
+    permission java.security.AllPermission;
+};
+
+grant codebase "file:${oracle.home}/javacache/admin/lib/http_client.jar" {
+    permission java.security.AllPermission;	
+};
+
+/* Repository */
+
+grant codebase "file:${oracle.home}/jlib/repository.jar" {
+    permission java.security.AllPermission;	
+};
+
+grant codebase "file:${oracle.home}/oracle/jlib/repository.jar" {
+    permission java.security.AllPermission;	
+};
+
+/* DMS */
+
+grant codebase "file:${oracle.home}/lib/dms.jar" {
+    permission java.security.AllPermission;
+};
+
+grant codebase "file:${oracle.home}/dms/lib/dms.jar" {
+    permission java.security.AllPermission;
+};
+
+grant codebase "file:${oracle.home}/opmn/lib/ons.jar" { 
+    permission java.security.AllPermission;
+};
+
+/* OJSP */
+
+grant codebase "file:${oracle.home}/j2ee/home/lib/ojsp.jar" {
+    permission java.security.AllPermission;
+};
+
+grant codebase "file:${oracle.home}/j2ee/home/lib/ojsputil.jar" {
+    permission java.security.AllPermission;
+};
+
+grant codebase "file:${oracle.home}/jdk/lib/tools.jar" {
+    permission java.security.AllPermission;
+};
+
+/* Misc */
+
+grant codebase "file:${oracle.home}/lib/aqapi.jar" {
+    permission java.security.AllPermission;
+};
+
+grant codebase "file:${oracle.home}/lib/jem.jar" {
+    permission java.security.AllPermission;
+};
+
+/* J2EE Applications */
+
+grant codebase "file:${oracle.home}/j2ee/home/-" {
+   permission java.io.FilePermission       "${oracle.home}/j2ee/home/-", "read"; 
+   permission java.util.PropertyPermission "java.protocol.handler.pkgs", "read,write"; 
+   permission java.util.PropertyPermission "transaction.log", "read";
+   permission java.util.PropertyPermission "http.singlethreaded.maxsize", "read";
+};
+
+/* Partial OJSP Demos enabling - pending 2209303 */
+
+grant codebase "file:${oracle.home}/j2ee/home/application-deployments/default/-" {
+
+   permission java.io.FilePermission       "${oracle.home}/j2ee/home/application-deployments/default/-","read,write";
+   permission java.io.FilePermission       "${oracle.home}/j2ee/home/default-web-app/-","read,write";
+   permission java.io.FilePermission       "${oracle.home}/j2ee/home/-","read";
+   permission java.io.FilePermission       "${oracle.home}/jdk/jre/lib/-","read";
+   permission java.lang.RuntimePermission  "accessClassInPackage.sun.*";
+   permission java.util.PropertyPermission "oracle.*", "read";
+   permission java.util.PropertyPermission "sun.*", "read";
+   permission java.util.PropertyPermission "java.*", "read";
+   permission java.util.PropertyPermission "javac.*", "read";
+
+};
+

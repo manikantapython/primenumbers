@@ -1,0 +1,152 @@
+<?xml version="1.0" standalone='yes'?>
+<!DOCTYPE jazn-data PUBLIC "JAZN-XML Data" "http://xmlns.oracle.com/ias/dtds/jazn-data.dtd">
+<jazn-data>
+
+<!-- JAZN Realm Data -->
+<jazn-realm>
+	<realm>
+		<name>sample_subrealm</name>
+		<users>
+			<user>
+				<name>ray</name>
+				<credentials>!welcome</credentials>
+			</user>
+			<user>
+				<name>naresh</name>
+				<credentials>!welcome</credentials>
+			</user>
+			<user>
+				<name>rachel</name>
+				<credentials>!chan</credentials>
+			</user>
+			<user>
+				<name>admin</name>
+				<displayName>Realm Administrator</displayName>
+				<description>Administrator for this realm.</description>
+				<credentials>!welcome</credentials>
+			</user>
+			<user>
+				<name>stella</name>
+				<credentials>!welcome</credentials>
+			</user>
+		</users>
+		<roles>
+			<role>
+				<name>manager</name>
+				<members>
+					<member>
+						<type>user</type>
+						<name>naresh</name>
+					</member>
+					<member>
+						<type>user</type>
+						<name>ray</name>
+					</member>
+				</members>
+			</role>
+			<role>
+				<name>administrators</name>
+				<displayName>Realm Admin Role</displayName>
+				<description>Administrative role for this realm.</description>
+				<members>
+					<member>
+						<type>user</type>
+						<name>admin</name>
+					</member>
+				</members>
+			</role>
+			<role>
+				<name>developer</name>
+				<members>
+					<member>
+						<type>user</type>
+						<name>rachel</name>
+					</member>
+					<member>
+						<type>user</type>
+						<name>stella</name>
+					</member>
+					<member>
+						<type>role</type>
+						<name>manager</name>
+					</member>
+				</members>
+			</role>
+		</roles>
+	</realm>
+</jazn-realm>
+
+<!-- JAZN Policy Data -->
+<jazn-policy>
+	<grant>
+		<grantee>
+			<principals>
+				<principal>
+					<realm>sample_subrealm</realm>
+					<type>role</type>
+					<class>oracle.security.jazn.spi.xml.XMLRealmRole</class>
+					<name>sample_subrealm/administrators</name>
+				</principal>
+			</principals>
+		</grantee>
+		<permissions>
+			<permission>
+				<class>oracle.security.jazn.realm.RealmPermission</class>
+				<name>sample_subrealm</name>
+				<actions>modifyrealmmetadata</actions>
+			</permission>
+			<permission>
+				<class>oracle.security.jazn.realm.RealmPermission</class>
+				<name>sample_subrealm</name>
+				<actions>droprealm</actions>
+			</permission>
+			<permission>
+				<class>oracle.security.jazn.policy.AdminPermission</class>
+				<name>oracle.security.jazn.realm.RealmPermission$sample_subrealm$modifyrealmmetadata</name>
+			</permission>
+			<permission>
+				<class>oracle.security.jazn.policy.AdminPermission</class>
+				<name>oracle.security.jazn.realm.RealmPermission$sample_subrealm$droprealm</name>
+			</permission>
+			<permission>
+				<class>oracle.security.jazn.policy.AdminPermission</class>
+				<name>oracle.security.jazn.realm.RealmPermission$sample_subrealm$createrole</name>
+			</permission>
+			<permission>
+				<class>oracle.security.jazn.policy.AdminPermission</class>
+				<name>oracle.security.jazn.realm.RealmPermission$sample_subrealm$droprole</name>
+			</permission>
+			<permission>
+				<class>oracle.security.jazn.realm.RealmPermission</class>
+				<name>sample_subrealm</name>
+				<actions>createrealm</actions>
+			</permission>
+			<permission>
+				<class>oracle.security.jazn.policy.RoleAdminPermission</class>
+				<name>sample_subrealm/*</name>
+			</permission>
+			<permission>
+				<class>oracle.security.jazn.policy.AdminPermission</class>
+				<name>oracle.security.jazn.policy.RoleAdminPermission$sample_subrealm/*$</name>
+			</permission>
+			<permission>
+				<class>oracle.security.jazn.policy.AdminPermission</class>
+				<name>oracle.security.jazn.realm.RealmPermission$sample_subrealm$createrealm</name>
+			</permission>
+		</permissions>
+	</grant>
+</jazn-policy>
+
+<!-- Permission Class Data -->
+<jazn-permission-classes>
+</jazn-permission-classes>
+
+<!-- Principal Class Data -->
+<jazn-principal-classes>
+</jazn-principal-classes>
+
+<!-- Login Module Data -->
+<jazn-loginconfig>
+</jazn-loginconfig>
+
+</jazn-data>
